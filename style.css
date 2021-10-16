@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    background: linear-gradient(45deg, #11052C, #3D087B);
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 60vw;
+    height: 80vh;
+}
+
+.container h2 {
+    margin-bottom: 10px;
+    color: #FFE459;
+}
+
+.input-field {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-field input[type="text"] {
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    margin: 0 20px;
+}
+
+.input-field input[type="text"]::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.input-field .btn-add {
+    padding: 0.4rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #F43B86;
+    transition: 0.2s ease-in-out;
+}
+
+.input-field .btn-add:hover {
+    cursor: pointer;
+    background: #FFE459;
+    color: #F43B86;
+}
+
+.input-area {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.task-area {
+    width: 100%;
+}
+
+.task-area .task-list {
+    padding: 1rem;
+    width: 100%;
+    height: 55vh;
+    list-style: none;
+    overflow: auto;
+}
+
+.task-list .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.task-list .task:hover {
+    cursor: pointer;
+    background: #bfbfbf;
+}
+
+.buttons-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-delete {
+    padding: 0.2rem;
+    border: none;
+    background: #df0000;
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: 0.1s ease-in-out;
+}
+
+.btn-delete:hover {
+    cursor: pointer;
+    background: #bc0000;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 100vw;
+        height: auto;
+    }
+
+    .btn-delete {
+        font-size: 0.9rem;
+    }
+}
+
