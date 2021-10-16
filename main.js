@@ -27,7 +27,7 @@ function createTask() {
         });
     }
     else {
-        alert('You dont type any task');
+        alert("You didn't type any task");
     }
 }
 
