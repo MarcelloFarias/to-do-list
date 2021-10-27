@@ -94,6 +94,7 @@ body {
     border-radius: 4px;
     padding: 1rem;
     margin-bottom: 5px;
+    word-break: break-all;
     transition: 0.2s ease-in-out;
 }
 
@@ -102,9 +103,12 @@ body {
     background: #bfbfbf;
 }
 
+.task-list .task-checked {
+    background: rgba(255, 255, 255, 0.5);
+}
+
 .buttons-task {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -123,6 +127,14 @@ body {
     background: #bc0000;
 }
 
+.btn-delete-checked {
+    background: #bc0000;
+}
+
+.btn-delete-checked:hover {
+    background: #df0000;
+}
+
 @media (max-width: 800px) {
     .container {
         width: 100vw;
@@ -133,4 +145,3 @@ body {
         font-size: 0.9rem;
     }
 }
-
